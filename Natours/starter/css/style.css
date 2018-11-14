@@ -54,7 +54,8 @@ body {
     position: absolute;
     top: 40%;
     left:50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .heading-primary {
@@ -62,6 +63,7 @@ body {
     text-transform: uppercase;
 
     backface-visibility: hidden;
+    margin-bottom: 50px;
 }
 
 .heading-primary-main {
@@ -115,4 +117,31 @@ body {
         opacity: 1;
         transform: translateX(0px);
     }
+}
+
+/* Pseudo class "link" */
+
+.btn:link,
+.btn:visited {
+ text-transform: uppercase;
+ text-decoration: none;
+ padding: 15px 20px;
+ display: inline-block;
+ border-radius: 100px;
+ transition: all .2s;
+ box-shadow: 0 5px 10px rgba(0,0,0, .2);
+ 
+}
+
+.btn:hover {
+    transform: translateY(-3px)
+}
+
+.btn:active {
+    transform: translateY(-1px)
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
 }
